@@ -13,6 +13,7 @@ class JavalinApp(private val port: Int) {
 
         // get heroku port or uses default (for local environment)
         val port: Int = System.getenv("PORT")?.toIntOrNull() ?: port
+        TODO("Trigger warning")
 
         // starts Javalin
         val app = Javalin.create().apply {
